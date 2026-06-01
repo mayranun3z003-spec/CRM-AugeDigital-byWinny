@@ -1,0 +1,47 @@
+
+## 🛠️ Stack Tecnológico
+
+- **Backend:** Laravel 11
+- **Database:** PostgreSQL 15
+- **Frontend:** Vue 3 + Inertia.js
+- **WhatsApp:** WhatsApp Business API
+- **Pagos:** Mercado Pago
+- **Containerización:** Docker & Docker Compose
+- **Testing:** PHPUnit + Pest
+- **API Docs:** Swagger/OpenAPI
+- **CI/CD:** GitHub Actions
+
+## 📦 Módulos Principales
+
+1. **Autenticación & Autorización**
+2. **Gestión de Farmacias** (2 sucursales + 1 oficina)
+3. **Clientes & Contactos**
+4. **Inventario de Medicamentos**
+5. **Gestión de Pedidos**
+6. **Integración WhatsApp**
+7. **Asistente Jhonny** (Bot WhatsApp)
+8. **Procesamiento de Pagos** (Mercado Pago)
+9. **Reportes & Analytics**
+10. **Auditoría & Logs**
+
+## 🚀 Instalación Rápida
+
+### Con Docker (Recomendado)
+
+```bash
+# Clonar repositorio
+git clone https://github.com/mayranun3z003-spec/CRM-AugeDigital-byWinny.git
+cd CRM-AugeDigital-byWinny
+
+# Iniciar contenedores
+docker-compose up -d
+
+# Instalar dependencias
+docker-compose exec app composer install
+docker-compose exec app npm install
+
+# Setup base de datos
+docker-compose exec app php artisan migrate:fresh --seed
+
+# Generar key
+docker-compose exec app php artisan key:generate
