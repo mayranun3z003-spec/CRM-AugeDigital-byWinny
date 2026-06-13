@@ -1,0 +1,34 @@
+{
+  "type": "object",
+  "properties": {
+    "nombre": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "string"
+    },
+    "evento_disparador": {
+      "type": "string"
+    },
+    "condiciones": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "acciones": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "activo": {
+      "type": "boolean"
+    },
+    "ejecuciones": {
+      "type": "number"
+    }
+  },
+  "required": [],
+  "name": "Workflow"
+}
