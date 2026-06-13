@@ -1,0 +1,66 @@
+{
+  "type": "object",
+  "properties": {
+    "numero_ticket": {
+      "type": "string"
+    },
+    "cliente_id": {
+      "type": "string"
+    },
+    "titulo": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "string"
+    },
+    "categoria": {
+      "type": "string",
+      "enum": [
+        "Soporte T\u00e9cnico",
+        "Reclamo",
+        "Consulta",
+        "Devoluci\u00f3n",
+        "Pedido",
+        "Otro"
+      ]
+    },
+    "prioridad": {
+      "type": "string",
+      "enum": [
+        "Baja",
+        "Media",
+        "Alta",
+        "Urgente"
+      ]
+    },
+    "estado": {
+      "type": "string",
+      "enum": [
+        "Abierto",
+        "En Proceso",
+        "Resuelto",
+        "Cerrado"
+      ]
+    },
+    "agente_id": {
+      "type": "string"
+    },
+    "fecha_limite_sla": {
+      "type": "string"
+    },
+    "fecha_resolucion": {
+      "type": "string"
+    },
+    "pedido_id": {
+      "type": "string"
+    },
+    "canal": {
+      "type": "string"
+    },
+    "notas_internas": {
+      "type": "string"
+    }
+  },
+  "required": [],
+  "name": "Ticket"
+}
