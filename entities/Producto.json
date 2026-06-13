@@ -1,0 +1,52 @@
+{
+  "type": "object",
+  "properties": {
+    "codigo": {
+      "type": "string"
+    },
+    "nombre": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "string"
+    },
+    "categoria": {
+      "type": "string"
+    },
+    "precio": {
+      "type": "number"
+    },
+    "precio_costo": {
+      "type": "number"
+    },
+    "stock": {
+      "type": "number"
+    },
+    "stock_minimo": {
+      "type": "number"
+    },
+    "unidad": {
+      "type": "string"
+    },
+    "codigo_barras": {
+      "type": "string"
+    },
+    "imagen_url": {
+      "type": "string"
+    },
+    "activo": {
+      "type": "boolean"
+    },
+    "sucursal_id": {
+      "type": "string"
+    },
+    "proveedor": {
+      "type": "string"
+    },
+    "iva": {
+      "type": "number"
+    }
+  },
+  "required": [],
+  "name": "Producto"
+}
