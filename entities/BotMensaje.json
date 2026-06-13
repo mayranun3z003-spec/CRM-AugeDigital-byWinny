@@ -1,0 +1,49 @@
+{
+  "type": "object",
+  "properties": {
+    "contacto_wa": {
+      "type": "string"
+    },
+    "nombre_contacto": {
+      "type": "string"
+    },
+    "mensaje": {
+      "type": "string"
+    },
+    "direccion": {
+      "type": "string",
+      "enum": [
+        "entrante",
+        "saliente"
+      ]
+    },
+    "tipo": {
+      "type": "string",
+      "enum": [
+        "texto",
+        "imagen",
+        "audio",
+        "documento",
+        "bot",
+        "humano"
+      ]
+    },
+    "leido": {
+      "type": "boolean"
+    },
+    "transferido_humano": {
+      "type": "boolean"
+    },
+    "agente_id": {
+      "type": "string"
+    },
+    "pedido_id": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "string"
+    }
+  },
+  "required": [],
+  "name": "BotMensaje"
+}
