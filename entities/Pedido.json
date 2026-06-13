@@ -1,0 +1,70 @@
+{
+  "type": "object",
+  "properties": {
+    "numero_pedido": {
+      "type": "string"
+    },
+    "cliente_id": {
+      "type": "string"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "subtotal": {
+      "type": "number"
+    },
+    "descuento": {
+      "type": "number"
+    },
+    "iva": {
+      "type": "number"
+    },
+    "total": {
+      "type": "number"
+    },
+    "estado": {
+      "type": "string",
+      "enum": [
+        "Pendiente",
+        "Confirmado",
+        "En Proceso",
+        "Enviado",
+        "Entregado",
+        "Cancelado"
+      ]
+    },
+    "canal": {
+      "type": "string",
+      "enum": [
+        "Bot",
+        "POS",
+        "Web",
+        "Tel\u00e9fono",
+        "WhatsApp"
+      ]
+    },
+    "sucursal_id": {
+      "type": "string"
+    },
+    "agente_id": {
+      "type": "string"
+    },
+    "notas": {
+      "type": "string"
+    },
+    "metodo_pago": {
+      "type": "string"
+    },
+    "fecha_entrega_estimada": {
+      "type": "string"
+    },
+    "direccion_entrega": {
+      "type": "string"
+    }
+  },
+  "required": [],
+  "name": "Pedido"
+}
