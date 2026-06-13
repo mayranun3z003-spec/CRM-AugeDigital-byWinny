@@ -1,0 +1,25 @@
+{
+  "type": "object",
+  "properties": {
+    "nombre": {
+      "type": "string"
+    },
+    "direccion": {
+      "type": "string"
+    },
+    "ciudad": {
+      "type": "string"
+    },
+    "telefono": {
+      "type": "string"
+    },
+    "gerente": {
+      "type": "string"
+    },
+    "activa": {
+      "type": "boolean"
+    }
+  },
+  "required": [],
+  "name": "Sucursal"
+}
