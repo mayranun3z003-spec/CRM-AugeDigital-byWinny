@@ -1,0 +1,42 @@
+{
+  "type": "object",
+  "properties": {
+    "cliente_id": {
+      "type": "string"
+    },
+    "tipo": {
+      "type": "string",
+      "enum": [
+        "Llamada",
+        "Correo",
+        "WhatsApp",
+        "Visita",
+        "SMS",
+        "Otro"
+      ]
+    },
+    "descripcion": {
+      "type": "string"
+    },
+    "fecha": {
+      "type": "string"
+    },
+    "agente": {
+      "type": "string"
+    },
+    "resultado": {
+      "type": "string"
+    },
+    "duracion_minutos": {
+      "type": "number"
+    },
+    "seguimiento_requerido": {
+      "type": "boolean"
+    },
+    "fecha_seguimiento": {
+      "type": "string"
+    }
+  },
+  "required": [],
+  "name": "Interaccion"
+}
