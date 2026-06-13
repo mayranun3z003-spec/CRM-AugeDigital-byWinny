@@ -1,0 +1,59 @@
+{
+  "type": "object",
+  "properties": {
+    "nombre": {
+      "type": "string"
+    },
+    "tipo": {
+      "type": "string",
+      "enum": [
+        "Email",
+        "SMS",
+        "WhatsApp",
+        "Mixta"
+      ]
+    },
+    "estado": {
+      "type": "string",
+      "enum": [
+        "Borrador",
+        "Programada",
+        "En Curso",
+        "Completada",
+        "Pausada"
+      ]
+    },
+    "audiencia": {
+      "type": "string"
+    },
+    "mensaje": {
+      "type": "string"
+    },
+    "asunto": {
+      "type": "string"
+    },
+    "fecha_inicio": {
+      "type": "string"
+    },
+    "fecha_fin": {
+      "type": "string"
+    },
+    "total_enviados": {
+      "type": "number"
+    },
+    "total_abiertos": {
+      "type": "number"
+    },
+    "total_conversiones": {
+      "type": "number"
+    },
+    "presupuesto": {
+      "type": "number"
+    },
+    "costo_real": {
+      "type": "number"
+    }
+  },
+  "required": [],
+  "name": "Campana"
+}
